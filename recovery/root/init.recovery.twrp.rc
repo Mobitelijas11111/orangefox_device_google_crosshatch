@@ -9,3 +9,9 @@ on post-fs
 on property:twrp.apex.loaded=true
    export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/apex/com.android.runtime/lib64:/apex/com.google.android.media.swcodec/lib64:/apex/com.android.media.swcodec/lib64:/apex/com.android.media.swcodec/lib64/:/apex/com.android.runtime/lib64/:/apex/com.android.art.release/lib64:/apex/com.android.art/lib64/:/apex/com.android.os.statsd/lib64:/apex/com.android.art/lib64
 
+
+on property:twrp.modules.loaded=true
+    insmod /tmp/vendor/lib/modules/1.1/videobuf2-memops.ko
+    insmod /tmp/vendor/lib/modules/1.1/videobuf2-vmalloc.ko
+    insmod /tmp/vendor/lib/modules/1.1/heatmap.ko
+    insmod /tmp/vendor/lib/modules/1.1/ftm5.ko
