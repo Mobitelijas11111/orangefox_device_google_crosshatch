@@ -23,3 +23,7 @@ else
 
   include device/google/crosshatch/BoardConfig-common.mk
 endif
+
+# OrangeFox Display Brightness & Hardware Key Navigation
+TW_MAX_BRIGHTNESS := 1023
+TW_DEFAULT_BRIGHTNESS := 400

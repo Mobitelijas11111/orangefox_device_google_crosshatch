@@ -20,3 +20,21 @@ service vendor.weaver_hal /system/bin/android.hardware.weaver@1.0-service.citade
 on property:weaver.stop=1
     stop vendor.citadeld
     stop vendor.weaver_hal
+
+on property:sys.listeners.registered=true && property:keymaster_ver=4.1
+    start keymaster-4-0-qti
+
+on property:vendor.sys.listeners.registered=true && property:keymaster_ver=4.1
+    start keymaster-4-0-qti
+
+on property:sys.listeners.registered=true && property:keymaster_ver=4.1
+    start keymaster-4-0-qti
+
+on property:vendor.sys.listeners.registered=true && property:keymaster_ver=4.1
+    start keymaster-4-0-qti
+
+on property:sys.listeners.registered=true && property:keymaster_ver=4.1
+    start keymaster-4-0-qti
+
+on property:vendor.sys.listeners.registered=true && property:keymaster_ver=4.1
+    start keymaster-4-0-qti
