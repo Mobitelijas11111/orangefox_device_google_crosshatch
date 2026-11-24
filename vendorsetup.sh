@@ -6,6 +6,7 @@ export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 export OF_PATCH_AVB20=1
 export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 export OF_DEFAULT_KEYMASTER_VERSION=4.1
+export OF_MAINTAINER=LeonMobitelijas
 
 if [ "$FOX_BUILD_DEVICE" = "crosshatch" ]; then
     export OF_SCREEN_H=2960
