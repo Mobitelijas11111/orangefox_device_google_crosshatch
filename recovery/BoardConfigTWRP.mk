@@ -106,3 +106,4 @@ endif
 #
 # end local build flags
 #
+BOARD_USES_METADATA_PARTITION := true
